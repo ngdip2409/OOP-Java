@@ -1,0 +1,39 @@
+Cho bài toán sau: Một cơ quan quản lý nhập khẩu ôtô cần tính thuế cho các loại xe ôtô nhập khẩu. 
+Trong diện tính thuế do cơ quan quản lý có 03 loại xe khác nhau: Xe khách, Xe tải, Xe con. 
+Việc tính thuế được mô tả như sau: 
+
+1. Xe khách: Căn cứ vào giá gốc và số chỗ để tính thuế nhập khẩu. 
+Trong đó: Thuế nhập khẩu được tính như sau: 
++ Nếu là xe 24 chỗ trở xuống: Thuế = 60% * Giá 
++ Nếu là xe trên 24 chỗ: Thuế = 80% * Giá 
+  
+2. Xe tải: Căn cứ vào giá gốc và tải trọng của xe để tính thuế: 
+Trong đó: Thuế nhập khẩu được tính như sau: 
++ Nếu tải trọng xe là dưới 5 tấn : Thuế = 40% * Giá 
++ Nếu tải trọng xe từ 5 tấn trở lên: Thuế = 60% * Giá 
+  
+3. Xe con: Căn cứ vào giá gốc của xe, được chia làm 03 mức tính thuế như sau: 
++ Nếu xe có giá là từ 50.000 USD trở xuống thì: Thuế = 60* Giá. 
++ Nếu xe có giá từ 150.000 trở lên USD thì: Thuế = 100* Giá. 
++ Với mức giá còn lại thì: Thuế = 80* Giá. 
+  
+Yêu cầu: 
+- Xây dựng lớp trừu tượng XeOto được mô tả như sau: 
+
+Thuộc tính: 
++ Tên xe. 
++ Tên của nhà sản xuất hay hãng xe. 
++ Năm sản xuất. 
++ Giá gốc của xe khi đã tính chi phí vận chuyển. 
+  
+Phương thức: 
++ Khởi tạo 
++ Tính thuế (trừu tượng) 
++ In thông tin 
+  
+- Xây dựng các lớp XeKhach( có bổ sung thuộc tính số chỗ ngồi), XeTai( bổ sung thuộc tính tải trọng xe) và XeCon kế thừa từ 
+  lớp XeOto. Sử dụng cơ chế đa hình để xây dựng các phương thức: Khởi tạo, tính thuế và in thông tin cho từng đối tượng. 
+- Trong phương thức main() của lớp chính, thực hiện khởi tạo thông tin ban đầu cho mỗi đối tượng (mỗi đối tượng một bộ giá trị),
+tính thuế và in thông tin các đối tượng vừa nhập. 
+  
+Biết rằng: Giá gốc của xe do nhà sản xuất gửi đến cơ quan tính thuế và tính bằng đơn vị USD.
